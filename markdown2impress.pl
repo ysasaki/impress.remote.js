@@ -151,6 +151,7 @@ __DATA__
     <title><: $title :></title>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
     <link href="css/impress.css" rel="stylesheet" />
+    <link rel="stylesheet" href="google-code-prettify/prettify.css" />
 </head>
 <body>
 <div id="impress" class="impress-not-supported">
@@ -178,7 +179,13 @@ if ("ontouchstart" in document.documentElement) {
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script src="js/jquery.scrollTo-min.js"></script>
 <script src="js/impress.remote.client.js"></script>
-
+<script src="google-code-prettify/prettify.js" type="text/javascript"></script>
+<script>
+$(function(){
+    $('code').addClass('prettyprint');
+    prettyPrint();
+});
+</script>
 </body>
 </html>
 
